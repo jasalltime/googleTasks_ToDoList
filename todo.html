@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Todolist</title>
+</head>
+
+<body>
+    <script>a = document.createElement('div');
+        a.innerText='vaheguru';
+        document.body.appendChild(a);
+    </script>
+    
+    <button>press me</button>
+    <button>up</button>
+    
+    <div>  
+        <button>down</button>
+    </div>
+    
+
+    
+    <script>
+        
+
+        let todo1 = '1';
+        let todo2 = 'v1';
+        let todo3 = '1d';
+        let element2 = document.createElement('div');
+        element2.innerText = todo3;
+        document.body.appendChild(element2);
+
+        let element1 = document.createElement('div');
+        element1.innerText = todo2;
+        document.body.appendChild(element1);
+
+        let element = document.createElement('div');
+        element.innerText = todo1;
+        document.body.appendChild(element);
+        
+        //Add a Click Me button
+        let button = document.createElement('button');
+        button.innerText = "Click Me";
+        let mssg = ()=>{alert('"Click Me" button is clicked')}; //to show an alert on button click we need to pass a function 
+        button.onclick = mssg;                                  //instead of just assigning alert keyword directly
+        document.body.appendChild(button);
+
+        //Changing the title dynamically with JS
+        document.title = "v";
+        //OR
+        let newTitle = 'new title ';
+        document.title= newTitle;
+        //OR
+        //create button element
+        //add the innerText
+        //appendChild in the document's body
+        //add the function that it does on click
+        ChangeTitleButton = document.createElement('button');
+        ChangeTitleButton.innerText = "Change Title";
+        ChangeTitleButton.onclick = ()=>{newtitle= 'V V'; document.title = newtitle;};
+        document.body.appendChild(ChangeTitleButton);
+
+        //OR
+        document.querySelector('title').textContent = "1vu";//querySelector is used to select an element)
+
+        
+    </script>
+</body>
+</html
