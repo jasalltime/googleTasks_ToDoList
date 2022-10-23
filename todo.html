@@ -21,9 +21,9 @@
     <script>
         
 
-        let todo1 = '1';
-        let todo2 = 'v1';
-        let todo3 = '1d';
+        let todo1 = '1st task';
+        let todo2 = '2nd task';
+        let todo3 = '3rd task';
         let element2 = document.createElement('div');
         element2.innerText = todo3;
         document.body.appendChild(element2);
@@ -61,7 +61,47 @@
         //OR
         document.querySelector('title').textContent = "1vu";//querySelector is used to select an element)
 
+        //-------when the user enters task and click "add" button , the task'll be added on the list below-----
         
+        //a function to add a list item on webpage
+        function showTask(listItem){
+            elmnt = document.createElement('div');
+            elmnt.innerText = listItem;
+            document.body.appendChild(elmnt);     
+        }
+        showTask(todo1);
+        showTask(todo2);
+        showTask(todo3);     
+        
+        function greeting(firstName){
+            console.log('Hello ' + firstName);//a func to greet with firstname
+        }
+        greeting('vaheguru');
+        
+        function converter(length){let result = 3937.0*length;}
+
+        //array
+        array = ['task 1','task 2','task 3'];
+        //add another element tp array
+        array.push('task 4');
+
+        //to remove the last element
+        array.pop();
+
+        array.forEach(function(todoTitle){
+            element = document.createElement('div');
+            element.inerText = todoTitle;
+            document.body.appendChild(element);
+        });
+
+        function toUpper(arr){
+           arr.forEach(function(value){
+            value.toUpperCase();
+           });
+           console.log(arr);
+	    }        
+        toUpper(['vaha','dhan']);
+
     </script>
 </body>
-</html
+</html>
