@@ -88,20 +88,28 @@
         //to remove the last element
         array.pop();
 
-        array.forEach(function(todoTitle){
+        array.forEach(function(todoItem){
             element = document.createElement('div');
-            element.inerText = todoTitle;
+            element.inerText = todoItem;
             document.body.appendChild(element);
         });
 
-        function toUpper(arr){
+        
+	//a function that takes an array of strings  as a parameter and converts all strings to upper case
+	function toUpper(arr){
            arr.forEach(function(value){
             value.toUpperCase();
            });
            console.log(arr);
 	    }        
-        toUpper(['vaha','dhan']);
-
+	    toUpper(array);
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
