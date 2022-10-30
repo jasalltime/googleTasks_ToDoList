@@ -90,7 +90,7 @@
 
         array.forEach(function(todoItem){
             element = document.createElement('div');
-            element.inerText = todoItem;
+            element.innerText = todoItem;
             document.body.appendChild(element);
         });
 
@@ -103,13 +103,26 @@
            console.log(arr);
 	    }        
 	    toUpper(array);
+
+    </script>
+
+    <!------------------------------------------------------------------------>
+
+    <input type="text" id="newItem"></input>
+    <button onclick="pushElement();"> add</button>
+    <script>
+	  let itemList = Array();
+        function pushElement(){
+            elem = getElementById("newItem");
+            itemList.push(elem.value);
+            displayItem(elem.value);
+        }
+        function displayItem(e){
+            let a = document.createElement('div');
+            a.innerText=e;
+            document.body.appendChild(a);
+
+        }
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
